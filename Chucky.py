@@ -313,8 +313,8 @@ wait = {
     'timeline':True,
     "Timeline":True,
     'autoAdd':True,
-    "comment1":"Ready:\n-VIP iOS\n-Selfbot\n-Protect Bot\n-Trial Included\n-Fitur bisa dipilih\n-Bot online ￼ \nHarga?Just PM line.me/ti/p/~nughiroyale",
-    "comment2":"Wkwkwk",
+    "comment1":"Ready:\n-VIP iOS\n-Selfbot\n-Protect Bot\n-Trial Included\n-Fitur bisa dipilih\n-Bot online 24hours \nHarga?Just PM line.me/ti/p/~nughiroyale",
+    "comment2":"Permisi kak",
     "comment3":"Maaf numpang promo",
     "comment4":"Cmiiw ^_^",
     "comment5":"Bot Auto Like ©By : ŘØ¥ΔŁ€ Ŧ€ΔΜ ƤŘØŦ€ĆŦ",    
@@ -2337,16 +2337,12 @@ def bot(op):
                 _name = msg.text.replace("Admin add @","")
                 _nametarget = _name.rstrip('  ')
                 gs = cl.getGroup(msg.to)
-                gs = ki.getGroup(msg.to)
-                gs = kk.getGroup(msg.to)
-                gs = kc.getGroup(msg.to)
-                gs = ks.getGroup(msg.to)
                 targets = []
                 for g in gs.members:
                     if _nametarget == g.displayName:
                         targets.append(g.mid)
                 if targets == []:
-                   random.choice(KAC).sendText(msg.to,"Contact not found")
+                   cl.sendText(msg.to,"Contact not found")
                 else:
                    for target in targets:
                         try:
@@ -2365,16 +2361,12 @@ def bot(op):
                 _name = msg.text.replace("Admin remove @","")
                 _nametarget = _name.rstrip('  ')
                 gs = cl.getGroup(msg.to)
-                gs = ki.getGroup(msg.to)
-                gs = kk.getGroup(msg.to)
-                gs = kc.getGroup(msg.to)
-                gs = ks.getGroup(msg.to)
                 targets = []
                 for g in gs.members:
                     if _nametarget == g.displayName:
                         targets.append(g.mid)
                 if targets == []:
-                   random.choice(KAC).sendText(msg.to,"Contact not found")
+                   cl.sendText(msg.to,"Contact not found")
                 else:
                    for target in targets:
                         try:
