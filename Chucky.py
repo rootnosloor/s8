@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 from threading import Thread
 from googletrans import Translator
 from gtts import gTTS
-import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,os,subprocess,requests,tempfile
+import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,os,subprocess,requests,tempfile,wikipedia
 
 cl = LINETCR.LINE()
 #cl.login(qr=True)
